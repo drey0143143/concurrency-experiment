@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ main ]
+
+concurrency:
+  #group: plan-run-${{ github.head_ref }}
+  group: plan-run
+  #cancel-in-progress: true
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run a one-line script
+        run: |
+          echo "Running one-line script"
+          sleep 2m
+          echo "Finish running script"
+
+      - name: Run a multi-line script
+        run: |
+          echo " running multi-line script
+          sleep 2m
+          echo " finish running multi-line script"
