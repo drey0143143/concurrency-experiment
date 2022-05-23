@@ -1,4 +1,4 @@
-name: CI
+name: Concurrency worflows
 
 on:
   pull_request:
