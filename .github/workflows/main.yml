@@ -1,4 +1,3 @@
-name: Concurrency worflows
 
 on:
   pull_request:
@@ -24,6 +23,5 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          echo "running multi-line script"
           sleep 2m
           echo "finish running multi-line script"
