@@ -1,8 +1,7 @@
 name: CI
 
 on:
-  pull_request:
-    branches: [ main ]
+  push : [ main ]
 
 concurrency:
   group: ${{ github.run_id }}
