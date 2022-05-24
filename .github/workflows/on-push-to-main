@@ -1,8 +1,5 @@
 name: CI
 
-on:
-  push : [ main ]
-
 concurrency:
   group: ${{ github.run_id }}
   #group: plan-run
