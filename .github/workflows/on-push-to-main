@@ -1,7 +1,12 @@
 name: CI
 
+on:
+ push:
+   branches:
+     - main
+
 concurrency:
-  group: ${{ github.run_id }}
+  group: ci-${{ github.ref }}
   #group: plan-run
   #cancel-in-progress: true
   
