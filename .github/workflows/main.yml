@@ -4,7 +4,7 @@ on:
     branches: [ main ]
 
 concurrency:
-  group: plan-run-${{ github.head_ref }}
+  group: tf-plan-on-pr-${{ github.head_ref }}
   #group: plan-run
   #cancel-in-progress: true
   
