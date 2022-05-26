@@ -1,3 +1,3 @@
 # concurrency-experiment 
 
-test 2.1
+test 1.0
