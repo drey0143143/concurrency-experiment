@@ -5,15 +5,15 @@ on:
    branches:
      - main
 
-#concurrency:
-  #group: ci-${{ github.ref }}
+concurrency:
+  group: tf-apply-${{ github.ref }}
   #group: plan-run
   #cancel-in-progress: true
   
 jobs:
   build:
-    concurrency:
-      group: tf-apply-${{ github.ref }}
+    #concurrency:
+     #group: tf-apply-${{ github.ref }}
     runs-on: ubuntu-latest
 
     steps:
