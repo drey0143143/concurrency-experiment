@@ -1,3 +1,4 @@
+name: Pull Request concurrency workflow
 
 on:
   pull_request:
