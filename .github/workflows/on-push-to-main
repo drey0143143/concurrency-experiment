@@ -12,6 +12,8 @@ concurrency:
   
 jobs:
   build:
+    concurrency:
+      group: tf-apply-on-push
     runs-on: ubuntu-latest
 
     steps:
