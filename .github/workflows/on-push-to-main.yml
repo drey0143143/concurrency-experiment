@@ -1,0 +1,26 @@
+name: CI
+
+on:
+ push:
+   branches:
+     - main
+
+#concurrency:
+  #group: ci-${{ github.ref }}
+  #group: plan-run
+  #cancel-in-progress: true
+  
+jobs:
+  build:
+    concurrency:
+      group: tf-apply-${{ github.ref }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run a multi-line script
+        run: |
+          echo "running multi-line script"
+          sleep 2m
+          echo "finish running multi-line script"
