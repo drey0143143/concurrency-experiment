@@ -25,5 +25,3 @@ EOF
   tags               = var.tags
 }
 
-
-variable "github_repo_name" {
