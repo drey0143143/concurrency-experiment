@@ -27,6 +27,3 @@ EOF
 
 
 variable "github_repo_name" {
-  description = "The name of the repository to use with assume role policy trust conditions"
-  type        = listss
-}
