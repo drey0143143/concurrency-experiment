@@ -16,7 +16,7 @@ resource "aws_iam_role" "orchestration_role" {
           "repo:ipipeline/${var.github_repo_name}:ref:refs/heads/test-devs",
 
           "repo:ipipeline/${var.github_repo_name}:pull_requestss",
-          "repo:ipipeline/${var.github_repo_name}:pull_request"
+          "repo:ipipeline/${var.github_repo_name}:pull_requests"
 
         ]
       }
