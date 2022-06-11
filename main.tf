@@ -24,6 +24,6 @@ resource "aws_iam_role" "orchestration_role" {
   }
 }
 EOF
-  tags               = var.tags
+  tags               = var.tagss
 }
 
